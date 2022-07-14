@@ -12,7 +12,7 @@ CREATE TABLE logs (id serial PRIMARY KEY, <br/>
 надо не забыть открыт порт 5432 в AWS в EC2 Dashboard->Security groups>Inbounds rules иначе не увидим
 ![Image alt](https://github.com/shaimarus/web_sites_static_tempate/blob/main/AWS_security_group.jpg)
 
-## 3.ДЛя телеграм канала необходимо завести свои данные по токену и CHAT_ID:
+## 3.Для телеграм канала необходимо завести свои данные по токену и CHAT_ID:
 TOKEN = '5510341962:AAHdg5oh6-o4jDWLoBEsCpOsACVSnGTqFdE'
 CHAT_ID = '491737145'
 
