@@ -1,11 +1,11 @@
 ## Шаблон по статическому веб сервису, каждое посещение на сайте логируется и записывается в базу данных. Далее ежедненвно (на кроне) отправляется по телеграм отчет о кол-ве посещении.
 
 ## 1. Запуск контейнра docker-compose up --build -d
-## 2.Необходимо в поднятом БД(на postgres) создать таблицу logs (не прописано в докере):
-CREATE TABLE logs (id serial PRIMARY KEY,
-                    ip varchar (150) NOT NULL,
-                    time1  varchar (150) NOT NULL,
-                    day1  varchar (150) NOT NULL);
+## 2.Необходимо в поднятом БД(на postgres) создать таблицу logs (не прописано в докере): <br/>
+CREATE TABLE logs (id serial PRIMARY KEY, <br/>
+                    ip varchar (150) NOT NULL, <br/>
+                    time1  varchar (150) NOT NULL, <br/>
+                    day1  varchar (150) NOT NULL); <br/>
 Можно подключится через DBeaver хост - (AWS-public ip, если запускаем на AWS) и там создать таблицу
 
 надо не забыть открыт порт 5432 в AWS в EC2 Dashboard->Security groups>Inbounds rules иначе не увидим
