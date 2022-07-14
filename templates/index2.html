@@ -13,17 +13,17 @@
     <title>Earth - Free HTML5 Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <!--<link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
-    <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Additional CSS Files -->
-    <!--<link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
     <link rel="stylesheet" href="static/assets/css/tooplate-main.css">
-    <link rel="stylesheet" href="static/assets/css/owl.css"> -->
+    <link rel="stylesheet" href="static/assets/css/owl.css">
 
-    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/fontawesome.css') }}">
+    <!--<link rel="stylesheet" href="{{ url_for('static',filename='assets/css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/tooplate-main.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/owl.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/owl.css') }}"> -->
 
   </head>
 <!--
@@ -41,19 +41,15 @@ https://www.tooplate.com/view/2113-earth
     </div>
     
         <div class="logo">
-            <h1>Типография</h1>
+            <h1>Типография2</h1>
         </div>
         <nav>
           <ul>
-            <li><a href="#1"><img src="{{ url_for('static',filename='assets/images/icon-1.png') }}" alt=""> <em>Домашняя страница</em></a></li>
-            <li><a href="#2"><img src="{{ url_for('static',filename='assets/images/icon-2.png') }}" alt=""> <em>О нас</em></a></li>
-            <li><a href="#3"><img src="{{ url_for('static',filename='assets/images/icon-3.png') }}" alt=""> <em>Наша галерея</em></a></li>
-			      <li><a href="#4"><img src="{{ url_for('static',filename='assets/images/icon-4.png') }}" alt=""> <em>Контакты</em></a></li>
-            <!--<li><a href="#1"><img src="static/assets/images/icon-1.png" alt=""> <em>Домашняя страница</em></a></li>
+            <li><a href="#1"><img src="static/assets/images/icon-1.png" alt=""> <em>Домашняя страница</em></a></li>
             <li><a href="#2"><img src="static/assets/images/icon-2.png" alt=""> <em>О нас</em></a></li>
             <li><a href="#3"><img src="static/assets/images/icon-3.png" alt=""> <em>Наша галерея</em></a></li>
 			
-            <li><a href="#4"><img src="static/assets/images/icon-4.png" alt=""> <em>Контакты</em></a></li>-->
+            <li><a href="#4"><img src="static/assets/images/icon-4.png" alt=""> <em>Контакты</em></a></li>
           </ul>
         </nav>
         
@@ -84,13 +80,9 @@ https://www.tooplate.com/view/2113-earth
                 </div>
                 <div id="thumbnail">
                   <ul>
-                    <li class="active"><img src="{{ url_for('static',filename='assets/images/thumb-01.jpg') }}" alt="Earth" /></li>
-                    <li><img src="{{ url_for('static',filename='assets/images/thumb-02.jpg') }}" alt="Meeting" /></li>
-                    <li><img src="{{ url_for('static',filename='assets/images/thumb-03.jpg') }}" alt="Smart" /></li>   
-                    <!--<li class="active"><img src="static/assets/images/thumb-01.jpg" alt="Earth" /></li>
+                    <li class="active"><img src="static/assets/images/thumb-01.jpg" alt="Earth" /></li>
                     <li><img src="static/assets/images/thumb-02.jpg" alt="Meeting" /></li>
-                    <li><img src="static/assets/images/thumb-03.jpg" alt="Smart" /></li> -->   
-
+                    <li><img src="static/assets/images/thumb-03.jpg" alt="Smart" /></li>         
                   </ul>
                 </div>
               </div>
@@ -140,8 +132,7 @@ https://www.tooplate.com/view/2113-earth
                         <div class="owl-carousel owl-theme">
                             <div class="col-md-12">
                                 <div class="featured-item"> 
-                                	<a href=""><img src="{{ url_for('static',filename='assets/images/item-01.jpg') }}" alt=""></a>
-                                  <!--<a href=""><img src="static/assets/images/item-01.jpg" alt=""></a>-->
+                                	<a href=""><img src="static/assets/images/item-01.jpg" alt=""></a>
                                     <div class="down-content">
                                     <h4>Donec non sagittis</h4>
                                         <h6>$25.00</h6>
@@ -150,8 +141,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <a href=""><img src="{{ url_for('static',filename='assets/images/item-02.jpg') }}" alt=""></a>
-                                    <!--<a href=""><img src="static/assets/images/item-02.jpg" alt=""></a>-->
+                                    <a href=""><img src="static/assets/images/item-02.jpg" alt=""></a>
                                     <div class="down-content">
                                         <h4>Nulla a pharetra</h4>
                                         <h6>$35.00</h6>
@@ -160,8 +150,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="{{ url_for('static',filename='assets/images/item-03.jpg') }}" alt="">
-                                    <!--<img src="static/assets/images/item-03.jpg" alt="">-->
+                                    <img src="static/assets/images/item-03.jpg" alt="">
                                     <div class="down-content">
                                         <h4>Aliquam convallis</h4>
                                         <h6>$45.00</h6>
@@ -170,8 +159,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="{{ url_for('static',filename='assets/images/item-04.jpg') }}" alt="">
-                                    <!--<img src="static/assets/images/item-04.jpg" alt="">-->
+                                    <img src="static/assets/images/item-04.jpg" alt="">
                                     <div class="down-content">
                                         <h4>Vivamus vitae #4</h4>
                                         <h6>$55.00</h6>
@@ -180,8 +168,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="{{ url_for('static',filename='assets/images/item-05.jpg') }}" alt="">
-                                    <!--<img src="static/assets/images/item-05.jpg" alt="">-->
+                                    <img src="static/assets/images/item-05.jpg" alt="">
                                     <div class="down-content">
                                         <h4>Vivamus vitae #6</h4>
                                         <h6>$65.00</h6>
@@ -190,8 +177,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="{{ url_for('static',filename='assets/images/item-06.jpg') }}" alt="">
-                                    <!--<img src="static/assets/images/item-06.jpg" alt="">-->
+                                    <img src="static/assets/images/item-06.jpg" alt="">
                                     <div class="down-content">
                                         <h4>Vivamus vitae #8</h4>
                                         <h6>$75.00</h6>
@@ -200,8 +186,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="{{ url_for('static',filename='assets/images/item-07.jpg') }}" alt="">
-                                    <!--<img src="static/assets/images/item-07.jpg" alt="">-->
+                                    <img src="static/assets/images/item-07.jpg" alt="">
                                     <div class="down-content">
                                         <h4>Donec non sagittis</h4>
                                         <h6>$85.00</h6>
@@ -210,8 +195,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="{{ url_for('static',filename='assets/images/item-08.jpg') }}" alt="">
-                                    <!--<img src="static/assets/images/item-08.jpg" alt="">-->
+                                    <img src="static/assets/images/item-08.jpg" alt="">
                                     <div class="down-content">
                                         <h4>Curabitur sed 8</h4>
                                         <h6>$95.00</h6>
@@ -220,8 +204,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="{{ url_for('static',filename='assets/images/item-09.jpg') }}" alt="">
-                                    <!--<img src="static/assets/images/item-09.jpg" alt="">-->
+                                    <img src="static/assets/images/item-09.jpg" alt="">
                                     <div class="down-content">
                                         <h4>Curabitur sed 10</h4>
                                         <h6>$105.00</h6>
@@ -230,8 +213,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="{{ url_for('static',filename='assets/images/item-10.jpg') }}" alt="">
-                                    <!--<img src="static/assets/images/item-10.jpg" alt="">-->
+                                    <img src="static/assets/images/item-10.jpg" alt="">
                                     <div class="down-content">
                                         <h4>Curabitur sed 12</h4>
                                         <h6>$115.00</h6>
@@ -240,8 +222,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="{{ url_for('static',filename='assets/images/item-11.jpg') }}" alt="">
-                                    <!--<img src="static/assets/images/item-11.jpg" alt="">-->
+                                    <img src="static/assets/images/item-11.jpg" alt="">
                                     <div class="down-content">
                                         <h4>Curabitur sed 14</h4>
                                         <h6>$125.00</h6>
@@ -250,8 +231,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="{{ url_for('static',filename='assets/images/item-12.jpg') }}" alt="">
-                                    <!--<img src="static/assets/images/item-12.jpg" alt="">-->
+                                    <img src="static/assets/images/item-12.jpg" alt="">
                                     <div class="down-content">
                                         <h4>Curabitur sed 16</h4>
                                         <h6>$135.00</h6>
@@ -319,20 +299,15 @@ https://www.tooplate.com/view/2113-earth
 
 
     <!-- Bootstrap core JavaScript -->
-    <!--<script src="static/vendor/jquery/jquery.min.js"></script>
-    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
-
-    <script src="{{ url_for('static',filename='vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
     <!-- Additional Scripts -->
-    <!--<script src="static/assets/js/owl.js"></script>
+    <script src="static/assets/js/owl.js"></script>
     <script src="static/assets/js/accordations.js"></script>
-    <script src="static/assets/js/main.js"></script> -->
-    <script src="{{ url_for('static',filename='assets/js/owl.js') }}"></script>
-    <script src="{{ url_for('static',filename='assets/js/accordations.js') }}"></script>
-    <script src="{{ url_for('static',filename='assets/js/main.js') }}"></script>
+    <script src="static/assets/js/main.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function() {
 
