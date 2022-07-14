@@ -27,3 +27,22 @@ apt-get install -y cron <br/>
 Создаем в /opt/web файл run.sh. Прописываем для него chmod +x run.sh, внутрь пишем
 
 ![Image alt](https://github.com/shaimarus/web_sites_static_tempate/blob/main/crontab.jpg)
+
+## 5. Возможные проблемки
+Если выйдет проблема когда контейнеры не видят друг друга <br/>
+https://pgcookbook.ru/article/could_not_connect_to_server_connection_refused.html <br/>
+
+find / -name postgresql.conf 2> /dev/null <br/>
+проходим по этому пути октрывем через vi и открываем порт 5432 и далее контейтер с postgres перезагружаем, т.е. делаем docker restart <br/>
+
+Не удалось отправку через gmail, google недавно с 30.05.2022 убрал функцию по отправки через логи и пароли для безопасности<br/>
+
+Не удалось записывать логи через from flask_track_usage import TrackUsage, т.к. при ее подключении слетают CSS не знаю как победить, вроде менял "{{ url_for('static',filename='assets/css/fontawesome.css') }}" и т.д. не помогло <br/>
+
+Возможно больше отклик страницы т.к. делает инсерт в БД <br/>
+
+
+## TODO: <br/>
+Все описанное выше запихать в докер и чтобы писать только docker-compose up --build -d.
+
+
