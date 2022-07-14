@@ -21,7 +21,7 @@ https://stackoverflow.com/questions/29003305/sending-telegram-message-from-pytho
 ## 4.Настройка cron для ежедневного запуска
 Заходим в контейнер web. <br/>
 apt update <br/>
-apt-get install vim -y м
+apt-get install vim -y <br/>
 apt-get install -y cron <br/>
 
 Создаем в /opt/web файл run.sh. Прописываем для него chmod +x run.sh, внутрь пишем
