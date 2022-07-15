@@ -15,15 +15,17 @@ df['day1']=(pd.to_datetime(df['time1'])).dt.date
 
 plt.rcParams['figure.figsize'] = [20, 10]
 plt.title('Кол-во посещении сайта по дням')
-plt.bar(df.groupby(['day1']).size().index,df.groupby(['day1']).size().values,width=0.001)
+plt.bar(df.groupby(['day1']).size().index,df.groupby(['day1']).size().values)
 plt.xticks(rotation=90)
+plt.xticks(df.groupby(['day1']).size().index)
 plt.savefig('pic1.pdf')
 plt.close()
 
 plt.rcParams['figure.figsize'] = [20, 10]
 plt.title('Кол-во уникальных посещении сайта по дням')
-plt.bar(df.groupby('day1')['ip'].nunique().index,df.groupby('day1')['ip'].nunique().values,width=0.001)
+plt.bar(df.groupby('day1')['ip'].nunique().index,df.groupby('day1')['ip'].nunique().values)
 plt.xticks(rotation=90)
+plt.xticks(df.groupby(['day1']).size().index)
 plt.savefig('pic2.pdf')
 plt.close()
 
