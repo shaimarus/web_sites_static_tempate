@@ -35,10 +35,13 @@ import requests
 
 TOKEN = '5510341962:AAHdg5oh6-o4jDWLoBEsCpOsACVSnGTqFdE'
 CHAT_ID = '491737145'
-SEND_URL = f'https://api.telegram.org/bot{TOKEN}/sendDocument'
 
-#your_message='sdfsdfsdfsdf1212'
-#requests.post(SEND_URL, json={'chat_id': CHAT_ID, 'text': your_message}) 
+
+SEND_URL = f'https://api.telegram.org/bot{TOKEN}/sendmessage'
+your_message='Отчет по состоянию на {}'.format(datetime.today().strftime('%d-%m-%Y'))
+requests.post(SEND_URL, json={'chat_id': CHAT_ID, 'text': your_message}) 
+
+SEND_URL = f'https://api.telegram.org/bot{TOKEN}/sendDocument'
 
 with open("pic1.pdf", "rb") as filexlsx:
     files = {'document':filexlsx}
