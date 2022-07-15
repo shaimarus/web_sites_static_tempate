@@ -51,3 +51,8 @@ with open("pic2.pdf", "rb") as filexlsx:
     files = {'document':filexlsx}
     r=requests.post(SEND_URL, data={'chat_id': CHAT_ID, "caption":'Кол-во уникальных посещении сайта по дням'},files=files) 
 
+df.to_csv('logs.csv')
+
+with open("logs.csv", "rb") as filexlsx:
+    files = {'document':filexlsx}
+    r=requests.post(SEND_URL, data={'chat_id': CHAT_ID, "caption":'Логи'},files=files) 
